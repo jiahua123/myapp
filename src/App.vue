@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">		
+  			<Input></Input>
+  			<Checkbox></Checkbox>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Checkbox from './components/Checkbox';
+  import Input from './components/Input';
+  
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+  	Checkbox,
+  	Input,
+  
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+	#app{
+		height: 300px;
+		width: 400px;
+		margin:100px auto;
+	}
 </style>
